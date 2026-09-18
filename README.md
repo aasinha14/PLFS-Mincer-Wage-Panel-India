@@ -10,7 +10,7 @@ Abhishek Anand Sinha, MA in Public Policy & Governance, TISS
 
 ## Research Question
 
-> *Estimate the returns to education and experience in [STATE] using a Mincer wage equation on a 4-year appended PLFS panel, comparing pooled OLS and fixed-effects estimates, and examining how these returns differ by social group, sex, and religion.*
+> *Estimate the returns to education and experience in India using a Mincer wage equation on a 4-year appended PLFS panel, comparing pooled OLS and fixed-effects estimates, and examining how these returns differ by social group, sex, and religion.*
 
 ---
 
@@ -18,9 +18,9 @@ Abhishek Anand Sinha, MA in Public Policy & Governance, TISS
 
 - **Source:** Periodic Labour Force Survey (PLFS), Ministry of Statistics and Programme Implementation (MoSPI), Government of India
 - **Unit of Analysis:** Individual (usual principal + subsidiary status, employed persons)
-- **Panel Structure:** 4 appended rounds, [STATE PENDING], individual-level panel linked via PID
-- **Sample Size:** [PENDING, fill in after `describe, full` / panel-balance check]
-- **Coverage:** [Rural and Urban / Rural only / Urban only, PENDING]
+- **Panel Structure:** 4 appended rounds, individual-level panel linked via PID
+- **Sample Size:** ~16 lakh, unbalanced
+- **Coverage:** Rural and Urban
 
 > ⚠️ The raw PLFS unit-level data files are **not included** in this repository, as they are government microdata files subject to MoSPI's terms of use. See [`data/README_data.md`](data/README_data.md) for instructions on how to access and prepare them.
 
@@ -66,7 +66,6 @@ Two core estimation strategies are used, following the project's Stata command r
 | `exp2`        | -0.0005    | -0.0004        |
 
 - FE model: **rho = 0.5199** (≈52% of unexplained variance attributable to individual-specific effects), **corr(u_i, Xb) = 0.0621**
-- [PENDING: subgroup regression results by social group, sex, religion, once state and variables are confirmed]
 
 > All results to be exported via `outreg2` to Excel; see `outputs/tables/`.
 
@@ -85,7 +84,7 @@ Minimum 10 cited empirical papers on Indian labour markets (caste wage gaps, gen
 3. Open Stata and run `code/plfs_mincer_panel.do` from start to finish
 4. Outputs (regression tables, coefplots) will be saved to `outputs/tables/` and `outputs/graphs/`
 
-**Software:** Stata (version used for analysis)
+**Software:** Stata
 **Packages required:** `outreg2`, `coefplot` (install via `ssc install outreg2` / `ssc install coefplot` if not already installed); otherwise standard Stata commands only.
 
 ---
