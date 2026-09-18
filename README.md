@@ -4,7 +4,7 @@
 
 ## Authors
 
-Abhishek Anand Sinha [, add co-authors if any]
+Abhishek Anand Sinha, MA in Public Policy & Governance, TISS
 
 ---
 
