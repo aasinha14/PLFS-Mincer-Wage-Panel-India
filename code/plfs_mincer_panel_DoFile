@@ -1,0 +1,44 @@
+*==============================================================================
+* PLFS Mincer Wage Equation, 4-Year Appended Panel, [STATE PENDING]
+* Author: Abhishek Anand Sinha
+* This do-file will be filled in once:
+*   (1) State is finalized
+*   (2) describe, full / codebook output confirms variable names
+*   (3) Survey weight variable and PID consistency across rounds is verified
+*==============================================================================
+
+* --- 0. Setup -----------------------------------------------------------
+clear all
+set more off
+* cd "path/to/data"
+
+* --- 1. Load appended panel ----------------------------------------------
+* use "data/plfs_[state]_panel_4yr.dta", clear
+
+* --- 2. Variable checks (run once, before finalizing) ---------------------
+* describe, full
+* codebook PID year weight
+* duplicates report PID year
+
+* --- 3. Construct Mincer variables ----------------------------------------
+* gen experience = age - year_edu - 6
+* gen exp2 = experience^2
+* gen ln_wage = ln(wage)
+
+* --- 4. Pooled OLS ---------------------------------------------------------
+* regress ln_wage year_edu experience exp2 i.year [pweight=weight]
+* outreg2 using "outputs/tables/pooled_ols.xls", replace
+
+* --- 5. Fixed Effects (within estimator) -----------------------------------
+* xtset PID year
+* xtreg ln_wage year_edu experience exp2 i.year [pweight=weight], fe
+* outreg2 using "outputs/tables/fe_results.xls", replace
+
+* --- 6. Subgroup regressions (stratified, not interacted) ------------------
+* bysort social_group: regress ln_wage year_edu experience exp2
+* bysort sex: regress ln_wage year_edu experience exp2
+* bysort religion: regress ln_wage year_edu experience exp2
+
+* --- 7. Diagnostics & visualization -----------------------------------------
+* coefplot, drop(_cons) xline(0)
+* graph export "outputs/graphs/coefplot_pooled_vs_fe.png", replace
