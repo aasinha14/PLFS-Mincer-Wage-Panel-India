@@ -1,0 +1,19 @@
+# Raw and intermediate PLFS microdata (never commit government microdata)
+data/*.dta
+data/*.csv
+data/*.sav
+data/*.zip
+!data/README_data.md
+
+# Stata logs and temp files
+*.log
+*.smcl
+*.stswp
+*~*.tmp
+
+# OS junk
+.DS_Store
+Thumbs.db
+
+# Do-file editor autosave
+*.do.orig
