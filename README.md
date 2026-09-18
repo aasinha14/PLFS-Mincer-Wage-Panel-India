@@ -1,4 +1,4 @@
-# Mincer Wage Equation and Panel Wage Determinants in India: Evidence from PLFS (4-Year Appended Panel, [STATE PENDING])
+# Mincer Wage Equation and Panel Wage Determinants in India: Evidence from PLFS 2021 to 2024
 
 ---
 
