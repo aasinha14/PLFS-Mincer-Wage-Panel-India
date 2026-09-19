@@ -110,10 +110,10 @@ individual characteristics rather than education or experience alone.
 ## Theoretical Framing
 
 Findings are interpreted through four lenses:
-- **Human capital theory** — baseline positive return to education, holds in every subgroup
-- **Weber's social closure theory** — tests whether historically privileged groups show higher returns (only partially supported — ST results contradict a simple closure story)
-- **Arrow's statistical discrimination theory** — employers using group identity as a productivity proxy under imperfect information
-- **Becker's taste-based discrimination theory** — persistent wage gaps for SC and Muslim workers even after controlling for education
+- **Human capital theory**: baseline positive return to education, holds in every subgroup
+- **Weber's social closure theory**: tests whether historically privileged groups show higher returns (only partially supported — ST results contradict a simple closure story)
+- **Arrow's statistical discrimination theory**: employers using group identity as a productivity proxy under imperfect information
+- **Becker's taste-based discrimination theory**: persistent wage gaps for SC and Muslim workers even after controlling for education
 
 ---
 
