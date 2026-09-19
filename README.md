@@ -17,13 +17,11 @@ Abhishek Anand Sinha
 > and Becker's taste-based discrimination theory.*
 
 This submission answers 5 of 6 assigned questions:
-- **Q1** — Returns to education by sex and marital status (separate models per category)
-- **Q2** — Returns to education by social group and religion (separate models per category)
-- **Q3** — Returns to education by sector (rural/urban)
-- **Q4** — Cross-comparison of Q1–Q3, interpreted through the four theoretical lenses above
-- **Q6** — Role of individual-level heterogeneity, using a fixed-effects panel model
-
-(Q5, the policy-implications question, was not selected for this submission.)
+- **Q1**: Returns to education by sex and marital status (separate models per category)
+- **Q2**: Returns to education by social group and religion (separate models per category)
+- **Q3**: Returns to education by sector (rural/urban)
+- **Q4**: Cross-comparison of Q1–Q3, interpreted through the four theoretical lenses above
+- **Q5**: Role of individual-level heterogeneity, using a fixed-effects panel model
 
 ---
 
@@ -32,7 +30,7 @@ This submission answers 5 of 6 assigned questions:
 - **Source:** Periodic Labour Force Survey (PLFS), Ministry of Statistics and
   Programme Implementation (MoSPI), Government of India
 - **Unit of Analysis:** Individual (regular salaried/wage employees)
-- **Rounds used:** PLFS 2020-21, 2021-22, 2022-23, 2023-24 — appended into a single panel
+- **Rounds used:** PLFS 2020-21, 2021-22, 2022-23, 2023-24, appended into a single panel
 - **Sample Size:** 175,390 regular salaried/wage employees (unweighted); 159,136
   unique individuals across the panel
 - **Coverage:** All-India, rural and urban
@@ -49,7 +47,7 @@ Two estimation strategies were used:
 
 1. **Separate OLS Mincerian wage regressions**, estimated independently for each
    category of sex, marital status, social group, religion, and sector (no pooling,
-   no interaction terms — matching the course's taught method)
+   no interaction terms, matching the course's taught method)
 2. **Fixed-effects (within) panel regression**, using the person-level panel
    identifier, to isolate the role of time-invariant unobserved individual
    heterogeneity
