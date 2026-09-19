@@ -12,7 +12,7 @@ Abhishek Anand Sinha
 
 > *Estimate a Mincerian wage equation for regular salaried/wage employees in India
 > and examine how the wage return to education varies by sex, marital status, social
-> group, religion, and sector — then interpret the findings using human capital
+> group, religion, and sector, then interpret the findings using human capital
 > theory, Weber's social closure theory, Arrow's statistical discrimination theory,
 > and Becker's taste-based discrimination theory.*
 
@@ -65,7 +65,7 @@ Two estimation strategies were used:
 | `social_group` | Categorical | ST, SC, OBC, Others/General |
 | `religion` | Categorical | Hindu, Muslim, Christian, Sikh, Jain, Buddhist, Zoroastrian, Others |
 | `sector` | Binary | Rural, Urban |
-| `acws` | Filter | Current Weekly Status code — restricted to 31, 71, 72 (regular salaried/wage) |
+| `acws` | Filter | Current Weekly Status code: restricted to 31, 71, 72 (regular salaried/wage) |
 
 ---
 
@@ -91,7 +91,7 @@ Two estimation strategies were used:
 
 All coefficients significant at p < 0.001 unless noted otherwise (Jainism and
 Zoroastrianism religion categories have very small N and unstable/insignificant
-experience terms — see full report for details).
+experience terms, see full report for details).
 
 ### Individual heterogeneity (fixed-effects panel model)
 
@@ -111,7 +111,7 @@ individual characteristics rather than education or experience alone.
 
 Findings are interpreted through four lenses:
 - **Human capital theory**: baseline positive return to education, holds in every subgroup
-- **Weber's social closure theory**: tests whether historically privileged groups show higher returns (only partially supported — ST results contradict a simple closure story)
+- **Weber's social closure theory**: tests whether historically privileged groups show higher returns (only partially supported, ST results contradict a simple closure story)
 - **Arrow's statistical discrimination theory**: employers using group identity as a productivity proxy under imperfect information
 - **Becker's taste-based discrimination theory**: persistent wage gaps for SC and Muslim workers even after controlling for education
 
@@ -135,7 +135,7 @@ Findings are interpreted through four lenses:
 
 The PLFS unit-level microdata is anonymised and publicly available from MoSPI.
 No individual can be identified from this data. Estimates in this project are
-**unweighted** (no sampling multiplier was available in the provided dataset) —
+**unweighted** (no sampling multiplier was available in the provided dataset),
 this is noted as a limitation in the full report and should be kept in mind when
 interpreting population-level representativeness.
 
