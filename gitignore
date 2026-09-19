@@ -1,0 +1,11 @@
+# Raw PLFS microdata - never commit, download from MoSPI instead (see data/README_data.md)
+data/*.dta
+
+# Stata temp/log files
+*.log
+*.smcl
+
+# OS/editor junk
+.DS_Store
+Thumbs.db
+~$*
